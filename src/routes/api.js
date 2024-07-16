@@ -12,7 +12,9 @@ const routerAPI = express.Router();
 // routerAPI.post('/users', postCreateUserAPI);
 // routerAPI.put('/users', putUpdateUserAPI);
 // routerAPI.delete('/users', deleteUserAPI);
-
+routerAPI.get("/", (req, res) => {
+    return res.status(200).json("hello")
+})
 
 
 module.exports = routerAPI; //export default
